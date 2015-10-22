@@ -79,17 +79,16 @@ canvas{
 
 #availableColors{
 	list-style-type: none;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 #availableColors li{
 	float: left;
-	cursor: pointer;
 }
 #availableColors li~li{
 	margin-left: 6px;
 }
 #availableColors li a{
-	float: left;
+
 }
 #availableColors li a:hover{
 	bottom: 2px;
@@ -98,6 +97,117 @@ canvas{
 	bottom: 0;
 }
 #availableColors li a img{
-	height: 43px;
+	height: 40px;
+	background: linear-gradient(#000,#000) no-repeat;
+	background-position: 2.5px 14px;
+	background-size: 85% 22px;
+}
+
+#availableColors li#addColor{
+	position: relative;
+	float: right;
+}
+#availableColors li#addColor a img{
+	height: 40px;
+	background: initial;
+}
+
+#chooseColor{
+	background: #ddd;
+	box-shadow: 0 0 7px -2px #aaa;
+	width: 300px;
+	position: absolute;
+	right: -10px;
+	bottom: 160%;
+	display: none;
+}
+
+#chooseColor button{
+	width: 100%;
+	height: 40px;
+	font-size: 22px;
 	cursor: pointer;
+	border: none;
+	background: #ec8a8a;
+	color: #fff;
+	margin-bottom: 10px;
+}
+#chooseColor #wrap{
+	padding: 0 10px;
+}
+#chooseColor #dispalyColor{
+	width: 75px;
+	height: 75px;
+	background: #fff;	
+	box-shadow: 0 0 2px -1px #fff;
+	float: left;
+}
+#chooseColor #colorRanges{
+	float: right;
+}
+#chooseColor #colorRanges .contain{
+	margin-bottom: 15px;
+}
+#chooseColor #colorRanges label{
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #696969;
+}
+#chooseColor #colorRanges input[type=range]{
+	display: block;
+	width: 180px;
+    -webkit-appearance: none;
+}
+
+#chooseColor #colorRanges input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #ccc;
+    border: none;
+    border-radius: 3px;
+}
+
+#chooseColor #colorRanges input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ec8a8a;
+    margin-top: -4px;
+}
+#chooseColor #colorRanges input[type=range]:focus {
+    outline: none;
+}
+
+#chooseColor #colorRanges input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #c0bebe;
+}
+#chooseColor .triangle{
+	border-style: solid;
+	border-color: transparent;
+	border-width: 0px 15px;
+	border-top:25px solid #ddd;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 100%;
+	right: 20px;
+}
+
+#footer{
+	position: absolute;
+	bottom: 10px;
+	z-index: -1;
+}
+#footer p{
+	font-size: 12px;
+	color: #696969;
+}
+#footer a{
+	text-decoration: none;
+	font-weight: bold;
+}
+#footer a:hover{
+	text-decoration: underline;
 }
