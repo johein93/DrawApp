@@ -1,5 +1,11 @@
 {
 	"name": "Draw App",
 	"version": "1.0.0",
-	"main": "index.html"
+	"main": "index.html",
+	"window": {
+		"title": "Draw App",
+		"icon": "images/appicon.png",
+		"width": 700,
+		"height": 600
+	}
 }

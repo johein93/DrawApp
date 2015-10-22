@@ -3,10 +3,74 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="app.css">
 </head>
 <body>
-	
+	<div id="container">
+		<div id="title">
+			<img src="images/palette-title.png" alt="">
+			<h1>Fun Draw App</h1>
+			<img src="images/brush-title.png" alt="">
+		</div>
+		<div id="menu">
+			<div id="left">
+				<a href=""><img src="images/decrase-brush-size.png" alt=""></a>
+				<a href=""><img src="images/incrase-brush-size.png" alt=""></a>
+			</div>
+			<div id="right">
+				<a href=""><img src="images/trash.png" alt=""></a>
+				<a href=""><img src="images/save.png" alt=""></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<canvas>
+			
+		</canvas>
+		<ul id="availableColors">
+			<li>
+				<a href=""><img src="images/color-bucket.png" alt=""></a>
+			</li>
+			<li>
+				<a href=""><img src="images/color-bucket.png" alt=""></a>
+			</li>
+			<li>
+				<a href=""><img src="images/color-bucket.png" alt=""></a>
+			</li>
+			<li id="addColor">
+				<a href=""><img src="" alt=""></a>
+			</li>
+		</ul>
+		<div id="chooseColor">
+			<button>Add Color</button>
+			<div id="contain">
+				<div id="dispalyColor"></div>
+				<div id="colorRanges">
+					<div id="contain">
+						<label for="r">Red</label>
+						<input type="range" id="r">
+					</div>
+					<div id="contain">
+						<label for="g">Green</label>
+						<input type="range" id="g">
+					</div>
+					<div id="contain">
+						<label for="r">Blue</label>
+						<input type="range" id="b">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<p>
+				Developed By <a href="http://johein.co">Jo Hein</a>,
+				icons from <a href="https://icon8.com">icons8,</a>
+				idea of <a href="https://teamtreehouse.com">teamtreehouse</a>
+			</p>
+		</div>
+	</div>	
+
+
 	<script src="jquery-1.11.3.min.js"></script>
 	<script src="app.js"></script>
 </body>
