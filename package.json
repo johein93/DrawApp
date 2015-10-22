@@ -5,7 +5,7 @@
 	"window": {
 		"title": "Draw App",
 		"icon": "images/appicon.png",
-		"width": 700,
-		"height": 600
+		"width": 750,
+		"height": 650
 	}
 }
