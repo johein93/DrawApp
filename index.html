@@ -2,11 +2,77 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+	<title>Fun Draw App</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/appicon.png">
+	<link rel="stylesheet" href="app.css">
 </head>
 <body>
-	
+	<div id="container">
+		<div id="title">
+			<img src="images/palette-title.png" alt="">
+			<h1>Fun Draw App</h1>
+			<img src="images/brush-title.png" alt="">
+		</div>
+		<div id="menu">
+			<div id="left">
+				<a href=""><img src="images/decrase-brush-size.png" alt=""></a>
+				<a href=""><img src="images/incrase-brush-size.png" alt=""></a>
+			</div>
+			<div id="right">
+				<a href=""><img src="images/trash.png" alt=""></a>
+				<a href=""><img src="images/save.png" alt=""></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<canvas>
+			
+		</canvas>
+		<ul id="availableColors">
+			<li>
+				<a href=""><img src="images/color-bucket.png" alt=""></a>
+			</li>
+			<li>
+				<a href=""><img src="images/color-bucket.png" alt=""></a>
+			</li>
+			<li>
+				<a href=""><img src="images/color-bucket.png" alt=""></a>
+			</li>
+			<li id="addColor">
+				<a href=""><img src="images/more-color-bucket.png" alt=""></a>
+				<div id="chooseColor">
+					<button>Add Color</button>
+					<div id="wrap">
+						<div id="dispalyColor"></div>
+						<div id="colorRanges">
+							<div class="contain">
+								<label for="r">Red</label>
+								<input type="range" id="r" min="0" max="255" value="0">
+							</div>
+							<div class="contain">
+								<label for="g">Green</label>
+								<input type="range" id="g" min="0" max="255" value="0">
+							</div>
+							<div class="contain">
+								<label for="b">Blue</label>
+								<input type="range" id="b" min="0" max="255" value="0">
+							</div>
+						</div>
+					</div>
+					<div class="triangle"></div>
+				</div>
+
+			</li>
+			<div class="clear"></div>
+		</ul>
+
+		<div id="footer">
+			<p>
+				Developed By <a target="_blank" href="http://johein.co" style="color:#394c81">Jo Hein</a>,
+				icons from <a target="_blank" href="https://icons8.com" style="color:#2ecc71">icons8,</a>
+				idea of <a target="_blank" href="https://teamtreehouse.com" style="color:#27ae60">teamtreehouse</a>
+			</p>
+		</div>
+	</div>	
 	<script src="jquery-1.11.3.min.js"></script>
 	<script src="app.js"></script>
 </body>
