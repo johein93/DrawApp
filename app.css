@@ -80,6 +80,7 @@ canvas{
 #availableColors{
 	list-style-type: none;
 	margin-top: 20px;
+	float: left;
 }
 #availableColors li{
 	float: left;
@@ -103,11 +104,12 @@ canvas{
 	background-size: 85% 22px;
 }
 
-#availableColors li#addColor{
+#addColor{
 	position: relative;
 	float: right;
+	margin-top: 20px;
 }
-#availableColors li#addColor a img{
+#addColor a img{
 	height: 40px;
 	background: initial;
 }
@@ -119,7 +121,7 @@ canvas{
 	position: absolute;
 	right: -10px;
 	bottom: 160%;
-	display: none;
+	display: none;	
 }
 
 #chooseColor button{
