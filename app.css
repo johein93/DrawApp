@@ -70,22 +70,27 @@ body{
 
 canvas{
 	background: #fff;
-	width: 100%;
-	height: 400px;
 	display: block;
-	cursor: url(images/brush.png), auto;
+	/*cursor: url(images/brush.png), auto;*/
 	box-shadow: 0px 2px 6px -2px #aaa;
 }
 
 #availableColors{
 	list-style-type: none;
 	margin-top: 20px;
+	float: left;
 }
 #availableColors li{
 	float: left;
 }
+#availableColors li.selected a img{
+    -webkit-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+}
 #availableColors li~li{
-	margin-left: 6px;
+	margin-left: 8px;
 }
 #availableColors li a{
 
@@ -98,16 +103,22 @@ canvas{
 }
 #availableColors li a img{
 	height: 40px;
-	background: linear-gradient(#000,#000) no-repeat;
+	position: relative;
+	transition:0.1s;
+	background: linear-gradient(#fff,#fff) no-repeat;
 	background-position: 2.5px 14px;
 	background-size: 85% 22px;
 }
+#availableColors li:not(.selected) a:hover img{
+	bottom: 4px;
+}
 
-#availableColors li#addColor{
+#addColor{
 	position: relative;
 	float: right;
+	margin-top: 20px;
 }
-#availableColors li#addColor a img{
+#addColor a img{
 	height: 40px;
 	background: initial;
 }
@@ -119,7 +130,7 @@ canvas{
 	position: absolute;
 	right: -10px;
 	bottom: 160%;
-	display: none;
+	display: none;	
 }
 
 #chooseColor button{
