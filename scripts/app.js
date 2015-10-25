@@ -26,6 +26,7 @@ var lastEvent;
 var mouseDown = false;
 var burshSize = 1;
 var photoData = null;
+var fileName = "FunDrawImage.png";
 
 $canvas[0].width = parseInt($canvas.css('width'));
 $canvas[0].height = parseInt($canvas.css('height'));
@@ -75,17 +76,22 @@ $("#menu #left a").click(function(e){
 })
 
 
-function bindSavingToDisk () {
-    var $saver  = $('#saver');
-    $saver.change(function(){
-        var filePath = this.value;
-        fs.writeFile(filePath, photoData, 'base64', function (err) {
-            if (err) { alert('There was an error saving the photo:',err.message); }
-            photoData = null;
-        });
-    });
-}
-bindSavingToDisk();
+
+
+$('#saver').change(function(){
+	var path = $(this).val();
+	if(path.slice(-4) !== ".png"){
+		path += ".png";
+	}
+
+	fs.writeFile(path, photoData, 'base64', function (err) {
+		if (err) { alert('There was an error saving the photo:',err.message); }
+		photoData = null;
+	});
+	fileName = $(this).val();
+	$(this).val('');
+});
+
 
 $("#menu #right a").click(function(e){
 	var action = e.currentTarget.className;
@@ -94,11 +100,16 @@ $("#menu #right a").click(function(e){
 		context.clearRect(0,0,$canvas[0].width,$canvas[0].height);
 		break;
 		case "save":
-		var $saver = $("#saver");
-		$saver.attr('nwsaveas','FunDrawImage.png');
+
+		
+		// draw to canvas...
+
+		$saver = $("#saver");
+		$saver.attr('nwsaveas',fileName);
         photoData = $canvas[0].toDataURL('image/png').replace(/^data:image\/(png|jpg|jpeg);base64,/, '');
 		$saver.click();
 		break;
+
 	}
 })
 

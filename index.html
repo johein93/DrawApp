@@ -21,11 +21,11 @@
 			<div id="right">
 				<a href="" class="trash"><img src="images/trash.png" alt=""></a>
 				<a href="" class="save"><img src="images/save.png" alt=""></a>
-				<input type="file" nwsaveas id="saver"/>
+				<input type="file" nwsaveas  id="saver"/>
 			</div>
 			<div class="clear"></div>
 		</div>
-		<canvas>
+		<canvas id="my-canvas">
 			
 		</canvas>
 		<div id="temp"></div>
@@ -74,7 +74,10 @@
 			</p>
 		</div>
 	</div>	
-	<script src="jquery-1.11.3.min.js"></script>
-	<script src="app.js"></script>
+	<script src="scripts/jquery-1.11.3.min.js"></script>
+    <!-- // <script src="scripts/canvas-toBlob.js"> </script> -->
+    <!-- // <script src="scripts/FileSaver.min.js"> </script> -->
+    <script src="scripts/html2canvas.js"> </script>
+	<script src="scripts/app.js"></script>
 </body>
 </html>
