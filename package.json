@@ -1,11 +1,18 @@
 {
 	"name": "Draw App",
-	"version": "1.0.0",
+	"version": "0.1.0",
+	"description": "Simple Draw App",
 	"main": "index.html",
 	"window": {
 		"title": "Draw App",
 		"icon": "images/appicon.png",
+		"toolbar": false,
+		"frame": true,
 		"width": 750,
-		"height": 650
-	}
+		"height": 650,
+		"min_width": 750,
+		"min_height": 600
+	},
+	"icon": "images/appicon.png"
+
 }
