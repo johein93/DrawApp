@@ -1,6 +1,6 @@
 # DrawApp
 
-![My Pic](https://graph.facebook.com/100001271681217/picture?type=large "Jo Hein")
+![Screenshot](http://www.mediafire.com/convkey/75c6/r45jmpyq1jb8759zg.jpg?size_id=6 "Screenshot of Draw App")
 
 ### Introduction
 Use to draw transparent background image with multiple-colored, easy to use, clear user interface.  
@@ -8,7 +8,7 @@ ___Note___:: This is not a perfect app because it was my first project with Node
 
 ### Download
 **v0.1.0:** (October 31, 2005)
-  * Win: [32bit](http://www.mediafire.com/) / [64bit](http://www.mediafire.com/)
+  * Win: [32bit](http://www.mediafire.com/download/cb57h4j233qq4u2/) / [64bit](http://www.mediafire.com/download/1vud7b3bdkny5vu/)
   * Mac: [32bit](http://www.mediafire.com/) / [64bit](http://www.mediafire.com/)
 
 ### License
