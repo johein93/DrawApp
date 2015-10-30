@@ -110,9 +110,9 @@ canvas{
 	height: 40px;
 	position: relative;
 	transition:0.1s;
-	background: linear-gradient(#fff,#fff) no-repeat;
-	background-position: 2.5px 14px;
-	background-size: 85% 22px;
+	background: linear-gradient(#f00,#f00) no-repeat;
+	background-position: 3px 14px;
+	background-size: 84% 22px;
 }
 #availableColors li:not(.selected) a:hover img{
 	bottom: 4px;
