@@ -1,10 +1,10 @@
 # DrawApp
 
-![Screenshot](http://www.mediafire.com/convkey/26d2/54gkgtygn3ioynzzg.jpg?size_id=4 "Screenshot of Draw App")
 
 ### Introduction
 Use to draw transparent background image with multiple-colored, easy to use, clear user interface.  
 ___Note___:: This is not a perfect app because it was my first project with Node Webkit.
+![Screenshot](http://www.mediafire.com/convkey/26d2/54gkgtygn3ioynzzg.jpg?size_id=4 "Screenshot of Draw App")
 
 ### Download
 **v0.1.0:** (October 31, 2005)
