@@ -1,6 +1,6 @@
 # DrawApp
 
-![Screenshot](http://www.mediafire.com/convkey/75c6/r45jmpyq1jb8759zg.jpg?size_id=6 "Screenshot of Draw App")
+![Screenshot](http://www.mediafire.com/convkey/26d2/54gkgtygn3ioynzzg.jpg?size_id=4 "Screenshot of Draw App")
 
 ### Introduction
 Use to draw transparent background image with multiple-colored, easy to use, clear user interface.  
